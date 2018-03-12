@@ -1,0 +1,10 @@
+<div data-options="region:'north'" style="height: 100px">
+	<div class="easyui-panel" style="padding: 5px;">
+		<a href="#" class="easyui-linkbutton" data-options="plain:true, iconCls:'icon-edit'">Home</a>
+		<a href="#" class="easyui-splitbutton" data-options="menu:'#user_info',iconCls:'icon-man'">{:session('user_info.name')}</a>
+	</div>
+	<div id="user_info" style="width:100px;">
+		<div data-options="iconCls:'icon-ok'">个人信息</div>
+		<div data-options="iconCls:'icon-cancel'"><a href="{:url('user/logout')}">退出</a></div>
+	</div>
+</div>
